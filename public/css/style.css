@@ -1,0 +1,67 @@
+.container {
+    width: 1000px;
+    margin: auto;
+    min-width: 800px;
+    min-height: 100px;
+}
+
+body{
+    min-width: 1000px;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+
+    background: #D3F097; /* Для браузеров, которые не поддерживают градиенты */
+    background: -webkit-linear-gradient(#D3F097, #8DD204); /* Для Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#D3F097, #8DD204); /* Для Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#D3F097, #8DD204); /* Для Firefox 3.6 - 15 */
+    background: linear-gradient(#D3F097, #8DD204); /* Стандартный синтаксис */
+}
+
+
+#footer{
+    width: 100%;
+    height: 20%;
+
+    background: #D3F097; /* Для браузеров, которые не поддерживают градиенты */
+    background: -webkit-linear-gradient(#D3F097, #409721); /* Для Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#D3F097, #409721); /* Для Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#D3F097, #409721); /* Для Firefox 3.6 - 15 */
+    background: linear-gradient(#D3F097, #409721); /* Стандартный синтаксис */
+}
+
+#newGoods li {
+    background-color: #1d643b;
+    width: 310px;
+    height: 400px;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navBar li {
+    float: left;
+}
+
+#navBar li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navBar li a:hover{
+    background-color: red;
+}
+

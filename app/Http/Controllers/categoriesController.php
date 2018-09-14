@@ -9,7 +9,7 @@ class categoriesController extends Controller
 	public function index()
 	{
 		$categories = App\Categories::all();
-		return view('index', [
+		return view('home', [
 			'categories' => $categories
 		]);
 	}
