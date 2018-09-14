@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App;
 class categoriesController extends Controller
 {
 	public function index()
 	{
+		$newGoods = App\Goods::getNewGoods();
 		$categories = App\Categories::all();
 		return view('home', [
-			'categories' => $categories
+			'categories' => $categories,
+			'newGoods' => $newGoods
 		]);
 	}
 }

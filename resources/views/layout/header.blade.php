@@ -1,6 +1,6 @@
 <div id="header">
     <div class="container">
-        <img src={{asset('img/logo.png')}} height="100px" style="float: left">
+        <img src={{asset('img/logo.png')}} height="100px" style="float: left; border-radius: 70px">
 
         <div style="padding: 5px 100px; float: left">
             <p>
@@ -18,8 +18,11 @@
 <div>
     <div class="container" id="navBar">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">News</a></li>
+            @foreach($categories as $category)
+                <li>
+                    <a href="catalog/{{$category->id}}">{{$category->name}}</a>
+                </li>
+            @endforeach
         </ul>
     </div>
 </div>

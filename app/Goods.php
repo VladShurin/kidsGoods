@@ -10,4 +10,9 @@ class Goods extends Model
 	{
 		return static::where('category', $category)->get();
 	}
+
+	public static function getNewGoods()
+	{
+		return static::orderBy('date', 'DESC')->limit(10)->get();
+	}
 }

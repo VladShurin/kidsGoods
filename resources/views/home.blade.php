@@ -2,10 +2,12 @@
 
 @section('content')
     <div class="container">
-        <div style="padding: 10px 10px; " id="newGoods">
-            @foreach($categories as $category)
+        <div style="padding: 0 10px; " id="newGoods">
+            @foreach($newGoods as $goods)
                 <li>
-                    <a href="catalog/{{$category->id}}">{{$category->name}}</a>
+                    <div>
+                        <a href="">{{$goods->name}}</a>
+                    </div>
                 </li>
             @endforeach
         </div>

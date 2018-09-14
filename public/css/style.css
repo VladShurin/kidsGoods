@@ -2,10 +2,10 @@
     width: 1000px;
     margin: auto;
     min-width: 800px;
-    min-height: 100px;
 }
 
 body{
+    background-image: url(../img/fon.jpg);
     min-width: 1000px;
 }
 
@@ -34,19 +34,24 @@ body{
 
 #newGoods li {
     background-color: #1d643b;
-    width: 310px;
+    width: 314px;
     height: 400px;
     margin-top: 10px;
     margin-right: 10px;
     display: inline-block;
 }
 
+#newGoods li a {
+    text-align: center;
+    margin-top: 300px;
+}
+
 #navBar ul {
+    border-radius: 30px;
+    width: 955px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-image: linear-gradient(#CBFD03, gold);
 }
 
 #navBar li {
@@ -54,14 +59,18 @@ body{
 }
 
 #navBar li a, .dropbtn {
+    height: 50px;
+    color: #3f9ae5;
+    max-width: 100px;
     display: inline-block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 #navBar li a:hover{
-    background-color: red;
+    background-color: #D3F097;
 }
 
