@@ -4,8 +4,10 @@
     <div class="container">
         <div style="padding: 0 10px; " id="newGoods">
             @foreach($goods as $value)
-                <li>
-                    <a href="catalog/{{$value->id}}">{{$value->name}}</a>
+                <li id="{{$value->id}}" style="background-image: url({{url(asset('img/imgGoods/'.$value->img))}}); background-size: cover">
+                    <div style="width: 100%">
+                        <label>{{$value->name}}</label>
+                    </div>
                 </li>
             @endforeach
         </div>
