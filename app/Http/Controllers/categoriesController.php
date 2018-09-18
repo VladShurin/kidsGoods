@@ -11,7 +11,7 @@ class categoriesController extends Controller
 		$categories = App\Categories::all();
 		return view('home', [
 			'categories' => $categories,
-			'newGoods' => $newGoods
+			'goods' => $newGoods
 		]);
 	}
 }

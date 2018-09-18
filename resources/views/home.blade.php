@@ -3,11 +3,9 @@
 @section('content')
     <div class="container">
         <div style="padding: 0 10px; " id="newGoods">
-            @foreach($newGoods as $goods)
+            @foreach($goods as $value)
                 <li>
-                    <div>
-                        <a href="">{{$goods->name}}</a>
-                    </div>
+                    <a href="catalog/{{$value->id}}">{{$value->name}}</a>
                 </li>
             @endforeach
         </div>

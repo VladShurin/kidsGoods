@@ -13,4 +13,5 @@
 
 
 Route::get('/', 'categoriesController@index');
-Route::get('/catalog/{catalog}', 'goodsController@showGoods');
+Route::get('/{categoryGoods}', 'goodsController@showGoodsCategory');
+Route::get('/catalog/{catalog}', 'goodsController@showSelectedGoods');

@@ -15,4 +15,9 @@ class Goods extends Model
 	{
 		return static::orderBy('date', 'DESC')->limit(10)->get();
 	}
+
+	public static function getSelectedGoods($idGoods)
+	{
+		return static::where('id', $idGoods)->get();
+	}
 }

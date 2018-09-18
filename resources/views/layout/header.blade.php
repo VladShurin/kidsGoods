@@ -1,6 +1,6 @@
 <div id="header">
     <div class="container">
-        <img src={{asset('img/logo.png')}} height="100px" style="float: left; border-radius: 70px">
+        <img src={{asset('img/logo.png')}} height="100px" style="float: left; border-radius: 70px" id="logo">
 
         <div style="padding: 5px 100px; float: left">
             <p>
@@ -20,7 +20,7 @@
         <ul>
             @foreach($categories as $category)
                 <li>
-                    <a href="catalog/{{$category->id}}">{{$category->name}}</a>
+                    <a href="/{{$category->id}}">{{$category->name}}</a>
                 </li>
             @endforeach
         </ul>
