@@ -2,10 +2,21 @@
 
 @section('content')
     <div class="container">
-        @foreach($goods as $good)
-            <a>{{$good->name}} ({{$good->description}})</a>
-        @endforeach
+        <h1 id="nameGoods">{{$goods->name}}</h1>
+        <div style="height: 450px">
+            <span style="width: 400px; float: left">
+                <img src="{{asset('img/imgGoods/'.$goods->img)}}" width="400px">
+            </span>
+            <div style="float: right; width: 400px">
+            </div>
+        </div>
 
-        <button type="button" onclick="window.location='{{ url("/") }}'">Назад</button>
+        <div id="descriptionGoods">
+            {{$goods->description}}
+        </div>
+
+        <div style="margin-bottom: 50px">
+            <a href="{{ URL::previous() }}" id="returnButton">Вернуться</a>
+        </div>
     </div>
 @endsection

@@ -18,6 +18,6 @@ class Goods extends Model
 
 	public static function getSelectedGoods($idGoods)
 	{
-		return static::where('id', $idGoods)->get();
+		return static::where('id', $idGoods)->first();
 	}
 }
