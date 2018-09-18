@@ -101,7 +101,7 @@ body {
 }
 
 #descriptionGoods {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -120,7 +120,7 @@ body {
     -webkit-border-radius:18px;
     -moz-border-radius:18px;
     border-radius: 18px;
-    font:24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font:20px "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-weight:bold;
     color:#ffe100;
     background-color:#34e056;
@@ -136,4 +136,63 @@ body {
 
     text-shadow: 0px 3px 0px #fc0a0a;
     filter: dropshadow(color=#fc0a0a, offx=0, offy=3);
+}
+
+#authUser{
+    float: right;
+    margin: 20px 30px;
+    font-size: 20px;
+}
+
+#authUser a:hover{
+    cursor: pointer;
+    color: red;
+    -webkit-transform: scale(1.1, 1.1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1.1, 1.1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+    font-size: 25px;
+}
+
+.ui-dialog .ui-dialog-content{
+    overflow: inherit;
+}
+
+.ui-dialog-title {
+    color: #0886a5;
+}
+
+.ui-dialog-titlebar{
+    height: 10px;
+    background: linear-gradient(#D3F097, #8DD204);
+}
+
+#saveNewUser{
+    font-size: 14px;
+    border-radius: 20px;
+    background: #8DD204;
+}
+
+#saveNewUser:focus {
+    outline: none;
+}
+
+#modalNewUser, #modalAuth{
+    font-size: 14px;
+}
+
+#modalNewUser input, #modalAuth input{
+    width: 340px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#modalNewUser label, #modalAuth label{
+    font-size: 16px;
+    margin: 5px;
+    font-weight: bold;
 }

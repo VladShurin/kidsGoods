@@ -7,7 +7,8 @@
             <span style="width: 400px; float: left">
                 <img src="{{asset('img/imgGoods/'.$goods->img)}}" width="400px">
             </span>
-            <div style="float: right; width: 400px">
+            <div style="float: right; width: 400px; font-size: 22px">
+                <span>Цена: </span><span>{{$goods->price}} руб.</span>
             </div>
         </div>
 
